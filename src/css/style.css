@@ -8,74 +8,55 @@ body {
 }
 body {
   padding-top: 50px;
-  width: 100%;
+  width: 662px;
+  margin: 0px auto;
   height: 100%;
   background: #908f8c;
   display: flex;
   justify-content: center;
-  font-size: medium;
-}
-/* .task-tracker {
-  width: 40vw;
-  background-color: #ffffff;
-  padding: 2vw 10vw;
-  border-radius: 5px;
-}
-
-h1,
-h2 {
-  font-weight: 400;
-  text-size-adjust: auto;
-  margin-top: 1vw;
-}
-
-h1 {
-  font-size: x-large;
-}
-
-h2 {
   font-size: larger;
 }
 
-.input-form__input {
-  box-sizing: border-box;
-  width: 20vw;
-  margin-top: 5px;
-  padding: 5px 15px;
-  border-radius: 5px;
+.card__img {
+  width: 102px;
+  height: 64px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+  border-radius: 10px;
 }
-.error {
-  box-sizing: border-box;
 
-  margin-top: 5px;
-  padding: 5px;
-  border-radius: 5px;
+.card__img:last-child {
+  margin-right: 0px;
+}
 
+.form-control {
+  display: flex;
+  margin-top: 25px;
+
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  width: 500px;
+  height: 40px;
+  border: none;
+  font-size: larger;
+  border-radius: 10px;
+  border-color: #ffffff;
+  padding: 0px 10px;
+}
+
+button {
+  font-size: larger;
+  height: 40px;
+  border-radius: 10px;
+}
+.submit-button {
+  width: 150px;
+  border: none;
+  background-color: #18d43de1;
   color: #ffffff;
-  text-align: center;
-  background-color: #908f8c;
 }
-
-li {
-  list-style-type: none;
-  box-sizing: border-box;
-  width: 20vw;
-  margin: 5px 0px;
-  padding: 5px 15px;
-  border: 1px solid #3d3d3d;
-  border-radius: 5px;
-}
-
-.all-tasks-list .task {
-  background-image: url('../img/empty.png');
-  background-repeat: no-repeat;
-  background-position: center right 0.5vw;
-  background-size: 1.8vw;
-}
-
-.pinned-list .task {
-  background-image: url('../img/checked.png');
-  background-repeat: no-repeat;
-  background-position: center right 0.5vw;
-  background-size: 1.8vw;
-} */

@@ -7,7 +7,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '',
-    assetModuleFilename: 'images/[hash][ext][query]',
   },
   module: {
     rules: [
@@ -33,12 +32,15 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        generator: {
+          filename: 'img/[name][ext]',
+        },
       },
       {
         test: /\.(txt)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'static/[hash][ext][query]',
+          filename: '[name][ext]',
         },
       },
     ],

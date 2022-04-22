@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Task Tracker</title>
+    <title>Card Validator</title>
   </head>
 
   <body>
     <section class="card-validator">
-      <form data-widget="card-validator-form-widget">
+      <form class="validation-form">
+        <div class="validation-form__images"></div>
         <div class="form-control">
-          <label for="card-validator-input">Enter card number</label>
           <input
-            id="card-validator-input"
-            data-id="card-validator-input"
+            id="validation-form__input"
             type="number"
+            placeholder="Credit card number"
           />
+          <button class="submit-button">Submit</button>
         </div>
-        <button data-id="card-validator-submit">Submit</button>
       </form>
     </section>
   </body>
