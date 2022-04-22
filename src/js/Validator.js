@@ -55,6 +55,11 @@ export default class Validator {
   showCardType(cardType) {
     const type = document.createElement('div');
     type.classList.add('card-type');
+    if (cardType === 'a valid bank card whose type we cannot identify') {
+      type.classList.add('unknown-type');
+    } else {
+      type.classList.add('known-type');
+    }
     const typeInput = document.createElement('span');
     typeInput.classList.add('card-type__input');
 
@@ -71,7 +76,7 @@ export default class Validator {
     const errorElInput = document.createElement('span');
     errorElInput.classList.add('error__input');
 
-    errorElInput.textContent = 'This is not a card number';
+    errorElInput.textContent = 'This number is not a bank card number';
 
     errorEl.insertAdjacentElement('afterbegin', errorElInput);
 

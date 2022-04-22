@@ -10,6 +10,7 @@
     "no-alert": "off",
     "no-unused-vars": "off",
     "prefer-destructuring": ["error", { "object": true, "array": false }],
-    "no-extra-boolean-cast": 0
+    "no-extra-boolean-cast": 0,
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
   }
 }
