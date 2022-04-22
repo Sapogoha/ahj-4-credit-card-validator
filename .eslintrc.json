@@ -8,6 +8,8 @@
   "rules": {
     "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
     "no-alert": "off",
-    "no-unused-vars": "off"
+    "no-unused-vars": "off",
+    "prefer-destructuring": ["error", { "object": true, "array": false }],
+    "no-extra-boolean-cast": 0
   }
 }

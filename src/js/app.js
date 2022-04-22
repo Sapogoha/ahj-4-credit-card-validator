@@ -1,8 +1,4 @@
-import cardTypes from './cardTypes';
-import generateLogos from './generateLogos';
+import Validator from './Validator';
 
-const imageContainer = document.querySelector('.validation-form__images');
-
-for (const [key, value] of Object.entries(cardTypes)) {
-  generateLogos(imageContainer, value);
-}
+const validator = new Validator(document.querySelector('.card-validator'));
+validator.init();
