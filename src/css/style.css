@@ -31,6 +31,26 @@ body {
   margin-right: 0px;
 }
 
+.american-express {
+  background-image: url('../img/american-express.png');
+}
+
+.jcb {
+  background-image: url('../img/jcb.png');
+}
+.mastercard {
+  background-image: url('../img/mastercard.png');
+}
+.mir {
+  background-image: url('../img/mir.png');
+}
+.unionpay {
+  background-image: url('../img/unionpay.png');
+}
+.visa {
+  background-image: url('../img/visa.png');
+}
+
 .form-control {
   display: flex;
   margin-top: 25px;
